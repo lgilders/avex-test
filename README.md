@@ -1,3 +1,53 @@
+# Avex Product Labels
+
+The development of the Avex product labels feature was based off the existing Dawn Badges feature.
+
+Supported Badges now include:
+1. Sale
+2. Sold Out
+3. Low Stock
+4. New
+5. Exclusive / Custom
+6. Best Seller
+
+### Sale Badge
+- Triggered automatically when a Compare At price is provided for a product variant. If the Compare At price is removed, then Shopify automatically removes the Sale Badge.
+- Customize label and colors via the Theme Settings > Badges section for the Sale Badge.
+
+### Sold Out Badge
+- Triggered automatically when a product variant has a quantity of zero (0). If the item quantity is changed to greater than 0, then Shopify automatically removes the Sold Out Badge.
+- Customize label and colors via the Theme Settings > Badges section for the Sold Out Badge.
+
+### Low Stock Badge
+- Triggered automatically when a product quantity falls to 10 or fewer; handled via a Shopify Flow. If the item quantity for a product variant is changed to greater than 10, then the Flow automatically removes the Low Stock Badge.
+- Customize the label and colors via the Product > Product Variant > Metafields for Badge Text, Badge Color, and Badge Text Color post population. To change all 3 automatically, update the Shopify Flow values.
+
+### New Badge
+- Triggered automatically when the product variant is created and is less than or equal to 30 days since its creation; handled via a Shopify Flow. After 30 days, the Flow automatically removes the New Badge.
+- Customize the label and colors via the Product > Product Variant > Metafields for Badge Text, Badge Color, and Badge Text Color post population. To change all 3 automatically, update the Shopify Flow values.
+
+### Exclusive / Custom Badge
+- Managed via a product variant metafield named 'Display Custom Badge.'
+- Customize the label and colors via the Theme Settings > Badges section > Custom Badge.
+
+### Best Seller / Custom Badge
+- Customize the label and colors via the Product > Product Variant > Metafields for Badge Text, Badge Color, and Badge Text Color.
+
+## Product Display Page Badge Display
+Multiple badges are displayed on the Product Display Page based on the variant selected and the badges possible for that variant. These are displayed next to the price (based on the Dawn theme default placement).
+
+## Product Card Badge Display
+A single badge is displayed on the Product Card based on the following order:
+1. Sale
+2. Sold Out
+3. Low Stock / New / Metafield Values
+4. Custom / Display Custom Badge Metafield Value
+
+#### Future Option
+- Trigger Best Seller Badge automatically via a combination of product variant metafield and Shopify Flow. Create a Shopify Flow that triggers when an order is created, automatically incrementing a product variant metafield counter. When that counter metafield's value hits a certain threshold (say 100 sold), then another Flow triggers the addition of the Best Seller Badge.
+
+---
+
 # Dawn
 
 [![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
