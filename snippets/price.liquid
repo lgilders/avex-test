@@ -109,7 +109,10 @@
         </span>
       </div>
       {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
-        {% render 'unit-price', price: product.selected_or_first_available_variant.unit_price, measurement: product.selected_or_first_available_variant.unit_price_measurement %}
+        {% render 'unit-price',
+          price: product.selected_or_first_available_variant.unit_price,
+          measurement: product.selected_or_first_available_variant.unit_price_measurement
+        %}
       {%- endif -%}
     </div>
     {%- if show_badges -%}
@@ -119,6 +122,22 @@
 
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
         {{ 'products.product.sold_out' | t }}
+      </span>
+
+      <span class="badge price__badge-low-stock color-{{ settings.low_stock_badge_color_scheme }}">
+        {{ 'products.product.low_stock' | t }}
+      </span>
+
+      <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}">
+        {{ 'products.product.new' | t }}
+      </span>
+
+      <span class="badge price__badge-exclusive color-{{ settings.exclusive_badge_color_scheme }}">
+        {{ 'products.product.exclusive' | t }}
+      </span>
+
+      <span class="badge price__badge-best-seller color-{{ settings.best_seller_badge_color_scheme }}">
+        {{ 'products.product.best_seller' | t }}
       </span>
     {%- endif -%}
   </div>
