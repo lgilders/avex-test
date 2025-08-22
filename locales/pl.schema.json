@@ -202,12 +202,6 @@
             "label": "Do góry, do prawej"
           },
           "label": "Położenie na kartach"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Kolorystyka znaczków Wyprzedaż"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Kolorystyka znaczków Wyprzedane"
         }
       }
     },

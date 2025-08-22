@@ -202,12 +202,6 @@
             "label": "Nahoře vpravo"
           },
           "label": "Pozice na kartách"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Barevné schéma odznaku Sleva"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Barevné schéma odznaku Vyprodáno"
         }
       }
     },

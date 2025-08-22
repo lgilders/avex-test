@@ -216,12 +216,6 @@
             "label": "Ylhäällä oikealla"
           },
           "label": "Sijainti korteilla"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Alennusmyynti-tunnuksen värimalli"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Loppuunmyyty-tunnuksen värimalli"
         }
       }
     },

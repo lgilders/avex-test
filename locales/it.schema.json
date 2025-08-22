@@ -202,12 +202,6 @@
             "label": "In alto a destra"
           },
           "label": "Posizione sulle schede"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Schema colori per badge vendita"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Schema colori per badge esaurito"
         }
       }
     },

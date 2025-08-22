@@ -116,7 +116,10 @@
       {%- endif -%}
     </div>
     {%- if show_badges -%}
-      <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+      <span
+        class="badge price__badge-sale"
+        style="background: {{ settings.badges_background_color__sale }}; color: {{ settings.badges_text_color__sale }};"
+      >
         {%- if settings.badges_text__sale != blank -%}
           {{ settings.badges_text__sale }}
         {%- else -%}
@@ -124,7 +127,10 @@
         {%- endif -%}
       </span>
 
-      <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+      <span
+        class="badge price__badge-sold-out"
+        style="background: {{ settings.badges_background_color__sold_out }}; color: {{ settings.badges_text_color__sold_out }};"
+      >
         {%- if settings.badges_text__sold_out != blank -%}
           {{ settings.badges_text__sold_out }}
         {%- else -%}
@@ -132,7 +138,10 @@
         {%- endif -%}
       </span>
 
-      <span class="badge price__badge-low-stock color-{{ settings.low_stock_badge_color_scheme }}">
+      <span
+        class="badge price__badge-low-stock"
+        style="background: {{ settings.badges_background_color__low_stock }}; color: {{ settings.badges_text_color__low_stock }};"
+      >
         {%- if settings.badges_text__low_stock != blank -%}
           {{ settings.badges_text__low_stock }}
         {%- else -%}
@@ -140,7 +149,10 @@
         {%- endif -%}
       </span>
 
-      <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}">
+      <span
+        class="badge price__badge-new"
+        style="background: {{ settings.badges_background_color__new }}; color: {{ settings.badges_text_color__new }};"
+      >
         {%- if settings.badges_text__new != blank -%}
           {{ settings.badges_text__new }}
         {%- else -%}
@@ -148,7 +160,10 @@
         {%- endif -%}
       </span>
 
-      <span class="badge price__badge-exclusive color-{{ settings.exclusive_badge_color_scheme }}">
+      <span
+        class="badge price__badge-exclusive"
+        style="background: {{ settings.badges_background_color__exclusive }}; color: {{ settings.badges_text_color__exclusive }};"
+      >
         {%- if settings.badges_text__exclusive != blank -%}
           {{ settings.badges_text__exclusive }}
         {%- else -%}
@@ -156,7 +171,10 @@
         {%- endif -%}
       </span>
 
-      <span class="badge price__badge-best-seller color-{{ settings.best_seller_badge_color_scheme }}">
+      <span
+        class="badge price__badge-best-seller"
+        style="background: {{ settings.badges_background_color__best_seller }}; color: {{ settings.badges_text_color__best_seller }};"
+      >
         {%- if settings.badges_text__best_seller != blank -%}
           {{ settings.badges_text__best_seller }}
         {%- else -%}

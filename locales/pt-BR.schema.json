@@ -202,12 +202,6 @@
             "label": "Canto superior direito"
           },
           "label": "Posição em cartões"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Esquema de cores do selo de promoção"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Esquema de cores do selo de esgotado"
         }
       }
     },

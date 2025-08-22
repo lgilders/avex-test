@@ -202,12 +202,6 @@
             "label": "Oben rechts"
           },
           "label": "Position auf Karten"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Farbschema für Sale-Badges"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Farbschema für Ausverkauft-Badges"
         }
       }
     },

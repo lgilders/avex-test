@@ -202,12 +202,6 @@
             "label": "En haut à droite"
           },
           "label": "Position sur les cartes"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Nuancier de couleurs du badge de vente"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Nuancier de couleurs du badge de rupture de stock"
         }
       }
     },

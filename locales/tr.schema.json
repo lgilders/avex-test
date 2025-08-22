@@ -202,12 +202,6 @@
             "label": "Üst sağ"
           },
           "label": "Kartlardaki konum"
-        },
-        "sale_badge_color_scheme": {
-          "label": "İndirim rozeti renk şeması"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Tükendi rozeti renk şeması"
         }
       }
     },

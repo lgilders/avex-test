@@ -216,12 +216,6 @@
             "label": "上方靠右"
           },
           "label": "卡片上的位置"
-        },
-        "sale_badge_color_scheme": {
-          "label": "銷售徽章顏色配置"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "售罄徽章顏色佈景主題"
         }
       }
     },

@@ -202,12 +202,6 @@
             "label": "Rechtsboven"
           },
           "label": "Positie op kaarten"
-        },
-        "sale_badge_color_scheme": {
-          "label": "Kleurschema uitverkoop-badge"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Kleurschema uitverkocht-badge"
         }
       }
     },
