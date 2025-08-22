@@ -125,6 +125,7 @@
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
+            {% assign current_variant = card_product.selected_or_first_available_variant %}
             {%- if card_product.available == false -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
@@ -147,6 +148,26 @@
                   {{ settings.badges_text__sale }}
                 {%- else -%}
                   {{ 'products.product.on_sale' | t }}
+                {%- endif -%}
+              </span>
+            {%- elsif current_variant.metafields.custom.badge_text -%}
+              <span
+                id="Badge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left"
+                style="background: {{ current_variant.metafields.custom.badge_color | default: '#000' }}; color: {{ current_variant.metafields.custom.badge_text_color | default: '#FFF' }};"
+              >
+                {{ current_variant.metafields.custom.badge_text }}
+              </span>
+            {%- elsif current_variant.metafields.custom.display_custom_badge -%}
+              <span
+                id="Badge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left"
+                style="background: {{ settings.badges_background_color__custom | default: '#000' }}; color: {{ settings.badges_text_color__custom | default: '#FFF' }};"
+              >
+                {%- if settings.badges_text__custom != blank -%}
+                  {{ settings.badges_text__custom }}
+                {%- else -%}
+                  {{ 'products.product.custom' | t }}
                 {%- endif -%}
               </span>
             {%- endif -%}
@@ -559,6 +580,7 @@
           {% endif %}
         {% endif %}
         <div class="card__badge {{ settings.badge_position }}">
+          {% assign current_variant = card_product.selected_or_first_available_variant %}
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
@@ -581,6 +603,26 @@
                 {{ settings.badges_text__sale }}
               {%- else -%}
                 {{ 'products.product.on_sale' | t }}
+              {%- endif -%}
+            </span>
+          {%- elsif current_variant.metafields.custom.badge_text -%}
+            <span
+              id="Badge-{{ section_id }}-{{ card_product.id }}"
+              class="badge badge--bottom-left"
+              style="background: {{ current_variant.metafields.custom.badge_color | default: '#000' }}; color: {{ current_variant.metafields.custom.badge_text_color | default: '#FFF' }};"
+            >
+              {{ current_variant.metafields.custom.badge_text }}
+            </span>
+          {%- elsif current_variant.metafields.custom.display_custom_badge -%}
+            <span
+              id="Badge-{{ section_id }}-{{ card_product.id }}"
+              class="badge badge--bottom-left"
+              style="background: {{ settings.badges_background_color__custom | default: '#000' }}; color: {{ settings.badges_text_color__custom | default: '#FFF' }};"
+            >
+              {%- if settings.badges_text__custom != blank -%}
+                {{ settings.badges_text__custom }}
+              {%- else -%}
+                {{ 'products.product.custom' | t }}
               {%- endif -%}
             </span>
           {%- endif -%}
