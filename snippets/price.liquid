@@ -138,49 +138,29 @@
         {%- endif -%}
       </span>
 
-      <span
-        class="badge price__badge-low-stock"
-        style="background: {{ settings.badges_background_color__low_stock }}; color: {{ settings.badges_text_color__low_stock }};"
-      >
-        {%- if settings.badges_text__low_stock != blank -%}
-          {{ settings.badges_text__low_stock }}
-        {%- else -%}
-          {{ 'products.product.low_stock' | t }}
-        {%- endif -%}
-      </span>
+      {% assign current_variant = product.selected_or_first_available_variant %}
 
-      <span
-        class="badge price__badge-new"
-        style="background: {{ settings.badges_background_color__new }}; color: {{ settings.badges_text_color__new }};"
-      >
-        {%- if settings.badges_text__new != blank -%}
-          {{ settings.badges_text__new }}
-        {%- else -%}
-          {{ 'products.product.new' | t }}
-        {%- endif -%}
-      </span>
+      {% if current_variant.metafields.custom.display_custom_badge %}
+        <span
+          class="badge price__badge-custom"
+          style="background: {{ settings.badges_background_color__custom | default: '#000' }}; color: {{ settings.badges_text_color__custom | default: '#FFF' }};"
+        >
+          {%- if settings.badges_text__custom != blank -%}
+            {{ settings.badges_text__custom }}
+          {%- else -%}
+            {{ 'products.product.custom' | t }}
+          {%- endif -%}
+        </span>
+      {% endif %}
 
-      <span
-        class="badge price__badge-exclusive"
-        style="background: {{ settings.badges_background_color__exclusive }}; color: {{ settings.badges_text_color__exclusive }};"
-      >
-        {%- if settings.badges_text__exclusive != blank -%}
-          {{ settings.badges_text__exclusive }}
-        {%- else -%}
-          {{ 'products.product.exclusive' | t }}
-        {%- endif -%}
-      </span>
-
-      <span
-        class="badge price__badge-best-seller"
-        style="background: {{ settings.badges_background_color__best_seller }}; color: {{ settings.badges_text_color__best_seller }};"
-      >
-        {%- if settings.badges_text__best_seller != blank -%}
-          {{ settings.badges_text__best_seller }}
-        {%- else -%}
-          {{ 'products.product.best_seller' | t }}
-        {%- endif -%}
-      </span>
+      {% if current_variant.metafields.custom.badge_text %}
+        <span
+          class="badge price__badge-custom"
+          style="background: {{ current_variant.metafields.custom.badge_color | default: '#000' }}; color: {{ current_variant.metafields.custom.badge_text_color | default: '#FFF' }};"
+        >
+          {{ current_variant.metafields.custom.badge_text }}
+        </span>
+      {% endif %}
     {%- endif -%}
   </div>
 {% endunless %}

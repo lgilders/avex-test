@@ -1296,85 +1296,22 @@
       },
       {
         "type": "header",
-        "content": "t:settings_schema.badges.settings.header__low_stock.content"
+        "content": "t:settings_schema.badges.settings.header__custom.content"
       },
       {
         "type": "text",
-        "id": "badges_text__low_stock",
+        "id": "badges_text__custom",
         "label": "t:settings_schema.badges.settings.badge_custom_text.label"
       },
       {
         "type": "color",
-        "id": "badges_background_color__low_stock",
+        "id": "badges_background_color__custom",
         "label": "t:settings_schema.badges.settings.badge_background_color.label",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "badges_text_color__low_stock",
-        "label": "t:settings_schema.badges.settings.badge_text_color.label",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "header",
-        "content": "t:settings_schema.badges.settings.header__new.content"
-      },
-      {
-        "type": "text",
-        "id": "badges_text__new",
-        "label": "t:settings_schema.badges.settings.badge_custom_text.label"
-      },
-      {
-        "type": "color",
-        "id": "badges_background_color__new",
-        "label": "t:settings_schema.badges.settings.badge_background_color.label",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "badges_text_color__new",
-        "label": "t:settings_schema.badges.settings.badge_text_color.label",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "header",
-        "content": "t:settings_schema.badges.settings.header__exclusive.content"
-      },
-      {
-        "type": "text",
-        "id": "badges_text__exclusive",
-        "label": "t:settings_schema.badges.settings.badge_custom_text.label"
-      },
-      {
-        "type": "color",
-        "id": "badges_background_color__exclusive",
-        "label": "t:settings_schema.badges.settings.badge_background_color.label",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "badges_text_color__exclusive",
-        "label": "t:settings_schema.badges.settings.badge_text_color.label",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "header",
-        "content": "t:settings_schema.badges.settings.header__best_seller.content"
-      },
-      {
-        "type": "text",
-        "id": "badges_text__best_seller",
-        "label": "t:settings_schema.badges.settings.badge_custom_text.label"
-      },
-      {
-        "type": "color",
-        "id": "badges_background_color__best_seller",
-        "label": "t:settings_schema.badges.settings.badge_background_color.label",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "badges_text_color__best_seller",
+        "id": "badges_text_color__custom",
         "label": "t:settings_schema.badges.settings.badge_text_color.label",
         "default": "#FFFFFF"
       }

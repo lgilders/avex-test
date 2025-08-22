@@ -113,34 +113,13 @@
           "label": "Text color"
         },
         "header__sale": {
-          "content": "Sale"
+          "content": "Sale Badge"
         },
         "header__sold_out": {
-          "content": "Sold Out"
+          "content": "Sold Out Badge"
         },
-        "header__low_stock": {
-          "content": "Low Stock"
-        },
-        "low_stock_badge_color_scheme": {
-          "label": "Low Stock badge color scheme"
-        },
-        "header__new": {
-          "content": "New"
-        },
-        "new_badge_color_scheme": {
-          "label": "New badge color scheme"
-        },
-        "header__exclusive": {
-          "content": "Exclusive"
-        },
-        "exclusive_badge_color_scheme": {
-          "label": "Exclusive badge color scheme"
-        },
-        "header__best_seller": {
-          "content": "Best Seller"
-        },
-        "best_seller_badge_color_scheme": {
-          "label": "Best Seller badge color scheme"
+        "header__custom": {
+          "content": "Custom Badge"
         }
       }
     },
