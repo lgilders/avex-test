@@ -5,7 +5,7 @@
   - product: {Object} Product Liquid object (optional)
   - placeholder: {Boolean} Renders a placeholder price (optional)
   - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
-  - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
+  - show_badges: {Boolean} Renders 'Sale', 'Sold Out', 'Low Stock', 'New', 'Exclusive', and 'Best Seller' tags if the product matches the condition (optional)
   - price_class: {String} Adds a price class to the price element (optional)
   - show_compare_at_price: {Boolean} Renders the compare at price if the product matches the condition (optional)
 
@@ -117,27 +117,51 @@
     </div>
     {%- if show_badges -%}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {{ 'products.product.on_sale' | t }}
+        {%- if settings.badges_text__sale != blank -%}
+          {{ settings.badges_text__sale }}
+        {%- else -%}
+          {{ 'products.product.on_sale' | t }}
+        {%- endif -%}
       </span>
 
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
-        {{ 'products.product.sold_out' | t }}
+        {%- if settings.badges_text__sold_out != blank -%}
+          {{ settings.badges_text__sold_out }}
+        {%- else -%}
+          {{ 'products.product.sold_out' | t }}
+        {%- endif -%}
       </span>
 
       <span class="badge price__badge-low-stock color-{{ settings.low_stock_badge_color_scheme }}">
-        {{ 'products.product.low_stock' | t }}
+        {%- if settings.badges_text__low_stock != blank -%}
+          {{ settings.badges_text__low_stock }}
+        {%- else -%}
+          {{ 'products.product.low_stock' | t }}
+        {%- endif -%}
       </span>
 
       <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}">
-        {{ 'products.product.new' | t }}
+        {%- if settings.badges_text__new != blank -%}
+          {{ settings.badges_text__new }}
+        {%- else -%}
+          {{ 'products.product.new' | t }}
+        {%- endif -%}
       </span>
 
       <span class="badge price__badge-exclusive color-{{ settings.exclusive_badge_color_scheme }}">
-        {{ 'products.product.exclusive' | t }}
+        {%- if settings.badges_text__exclusive != blank -%}
+          {{ settings.badges_text__exclusive }}
+        {%- else -%}
+          {{ 'products.product.exclusive' | t }}
+        {%- endif -%}
       </span>
 
       <span class="badge price__badge-best-seller color-{{ settings.best_seller_badge_color_scheme }}">
-        {{ 'products.product.best_seller' | t }}
+        {%- if settings.badges_text__best_seller != blank -%}
+          {{ settings.badges_text__best_seller }}
+        {%- else -%}
+          {{ 'products.product.best_seller' | t }}
+        {%- endif -%}
       </span>
     {%- endif -%}
   </div>

@@ -1253,10 +1253,28 @@
         "default": 40
       },
       {
+        "type": "header",
+        "content": "t:settings_schema.badges.settings.header__sale.content"
+      },
+      {
+        "type": "text",
+        "id": "badges_text__sale",
+        "label": "t:settings_schema.badges.settings.sale_badge_custom_text.label"
+      },
+      {
         "type": "color_scheme",
         "id": "sale_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sale_badge_color_scheme.label",
         "default": "scheme-5"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.badges.settings.header__sold_out.content"
+      },
+      {
+        "type": "text",
+        "id": "badges_text__sold_out",
+        "label": "t:settings_schema.badges.settings.sold_out_badge_custom_text.label"
       },
       {
         "type": "color_scheme",
@@ -1265,10 +1283,28 @@
         "default": "scheme-3"
       },
       {
+        "type": "header",
+        "content": "t:settings_schema.badges.settings.header__low_stock.content"
+      },
+      {
+        "type": "text",
+        "id": "badges_text__low_stock",
+        "label": "t:settings_schema.badges.settings.low_stock_badge_custom_text.label"
+      },
+      {
         "type": "color_scheme",
         "id": "low_stock_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.low_stock_badge_color_scheme.label",
         "default": "scheme-2"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.badges.settings.header__new.content"
+      },
+      {
+        "type": "text",
+        "id": "badges_text__new",
+        "label": "t:settings_schema.badges.settings.new_badge_custom_text.label"
       },
       {
         "type": "color_scheme",
@@ -1277,10 +1313,28 @@
         "default": "scheme-4"
       },
       {
+        "type": "header",
+        "content": "t:settings_schema.badges.settings.header__exclusive.content"
+      },
+      {
+        "type": "text",
+        "id": "badges_text__exclusive",
+        "label": "t:settings_schema.badges.settings.exclusive_badge_custom_text.label"
+      },
+      {
         "type": "color_scheme",
         "id": "exclusive_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.exclusive_badge_color_scheme.label",
         "default": "scheme-5"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.badges.settings.header__best_seller.content"
+      },
+      {
+        "type": "text",
+        "id": "badges_text__best_seller",
+        "label": "t:settings_schema.badges.settings.best_seller_badge_custom_text.label"
       },
       {
         "type": "color_scheme",

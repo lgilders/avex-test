@@ -103,20 +103,56 @@
           },
           "label": "Position on cards"
         },
+        "header__sale": {
+          "content": "Sale"
+        },
+        "sale_badge_custom_text": {
+          "label": "Sale badge"
+        },
         "sale_badge_color_scheme": {
           "label": "Sale badge color scheme"
         },
+        "header__sold_out": {
+          "content": "Sold Out"
+        },
+        "sold_out_badge_custom_text": {
+          "label": "Sold Out badge"
+        },
         "sold_out_badge_color_scheme": {
-          "label": "Sold out badge color scheme"
+          "label": "Sold Out badge color scheme"
+        },
+        "header__low_stock": {
+          "content": "Low Stock"
+        },
+        "low_stock_badge_custom_text": {
+          "label": "Low Stock badge"
         },
         "low_stock_badge_color_scheme": {
-          "label": "Low stock badge color scheme"
+          "label": "Low Stock badge color scheme"
+        },
+        "header__new": {
+          "content": "New"
+        },
+        "new_badge_custom_text": {
+          "label": "New badge"
         },
         "new_badge_color_scheme": {
           "label": "New badge color scheme"
         },
+        "header__exclusive": {
+          "content": "Exclusive"
+        },
+        "exclusive_badge_custom_text": {
+          "label": "Exclusive badge"
+        },
         "exclusive_badge_color_scheme": {
           "label": "Exclusive badge color scheme"
+        },
+        "header__best_seller": {
+          "content": "Best Seller"
+        },
+        "best_seller_badge_custom_text": {
+          "label": "Best Seller badge"
         },
         "best_seller_badge_color_scheme": {
           "label": "Best Seller badge color scheme"
