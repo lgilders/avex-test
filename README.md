@@ -31,6 +31,7 @@ Supported Badges now include:
 - Customize the label and colors via the Theme Settings > Badges section > Custom Badge.
 
 ### Best Seller / Custom Badge
+- Managed via the product variant metafields.
 - Customize the label and colors via the Product > Product Variant > Metafields for Badge Text, Badge Color, and Badge Text Color.
 
 ## Product Display Page Badge Display
@@ -40,10 +41,10 @@ Multiple badges are displayed on the Product Display Page based on the variant s
 A single badge is displayed on the Product Card based on the following order:
 1. Sale
 2. Sold Out
-3. Low Stock / New / Metafield Values
+3. Low Stock / New / Metafield Value
 4. Custom / Display Custom Badge Metafield Value
 
-#### Future Option
+## Future Option
 - Trigger Best Seller Badge automatically via a combination of product variant metafield and Shopify Flow. Create a Shopify Flow that triggers when an order is created, automatically incrementing a product variant metafield counter. When that counter metafield's value hits a certain threshold (say 100 sold), then another Flow triggers the addition of the Best Seller Badge.
 
 ---
