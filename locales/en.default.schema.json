@@ -108,6 +108,18 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Sold out badge color scheme"
+        },
+        "low_stock_badge_color_scheme": {
+          "label": "Low stock badge color scheme"
+        },
+        "new_badge_color_scheme": {
+          "label": "New badge color scheme"
+        },
+        "exclusive_badge_color_scheme": {
+          "label": "Exclusive badge color scheme"
+        },
+        "best_seller_badge_color_scheme": {
+          "label": "Best Seller badge color scheme"
         }
       }
     },
